@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My todo list</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="container">
+    <h1>TODOLIST</h1>
+    <form id="form">
+        <label id="label" for="todo"></label>
+        <input id="input" type="text" name="todo">
+        <button id="plus">+</button>
+        <div id="todos"></div>
+    </form>
+    
+        <!-- <div class="myDiv">
+            <label for="">
+                <input type="checkbox" class="checkbox">
+                <span>text</span>
+            </label>
+            <a href="#" class="pen"><i class="fas fa-pen"></i></a>
+            <a href="#" class="del"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="myDiv">
+            <input type="checkbox" class="checkbox">
+            <label for=""><span>text 2</span></label>
+            <a href="#" class="pen"><i class="fas fa-pen"></i></a>
+            <a href="#" class="del"><i class="fas fa-times"></i></a>
+        </div> -->
+    
+    <div class="group">
+        <p id="tdone"><span id='completed'>0</span> of <span id='total'>0</span> tasks done</p>
+        <button id="rmv">Remove checked <span>X</span></button>
+    </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

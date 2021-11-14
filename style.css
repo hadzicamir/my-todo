@@ -1,0 +1,145 @@
+body {
+  background-color: rgb(96, 172, 197);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1em 2em;
+  margin-top: 2rem;
+}
+
+h1 {
+  text-shadow: -1px 0 rgb(96, 172, 197), 0 1px rgb(96, 172, 197), 1px 0 rgb(96, 172, 197), 0 -1px rgb(96, 172, 197);
+  margin: 0;
+}
+
+#input {
+  width: 80%;
+  height: 1.6rem;
+  border: solid goldenrod;
+  border-width: 0.15rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
+  font-size: 18px;
+}
+
+#input:focus {
+  outline: none;
+}
+
+#plus {
+  height: 1.9rem;
+  width: 2rem;
+  background-color: rgb(96, 172, 197);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
+
+#label {
+  width: 30rem;
+}
+
+.group {
+  display: flex;
+}
+
+#todos {
+  text-align: left;
+}
+
+.myDiv {
+  padding: 0.5rem;
+  margin-left: 6%;
+  border-top: 1px solid grey;
+  width: 85%;
+  color: rgb(46, 102, 121);
+}
+
+.myDiv:last-of-type {
+  border-bottom: 1px solid grey;
+}
+
+#rmv {
+  width: 9rem;
+  height: 30%;
+  margin-top: 1rem;
+  float: right;
+  color: white;
+  background-color: rgb(96, 172, 197);
+  border: none;
+  padding: 6px;
+}
+
+#rmv span {
+  font-weight: bold;
+  padding-left: 0.4rem;
+}
+
+input[type='checkbox']:checked + label.strikethrough {
+    text-decoration: line-through;
+  } 
+
+.del > * {
+  pointer-events: none;
+}
+
+.del {
+  float: right;
+  padding-left: 8px;
+}
+
+.pen {
+  
+  float: right;
+}
+
+.pen > * {
+  pointer-events: none;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.group {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tdone {
+  margin-left: 6%;
+  padding-top: 0.2rem;
+  width: 9rem;
+  border: 1px solid lightgray;
+  padding: 3px;
+}
+
+#tdone span {
+  font-weight: bold;
+}
+
+.iconDiv {
+  float: right;
+}
+
+.fas {
+  color: lightgray;
+}
