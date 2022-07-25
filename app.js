@@ -58,7 +58,6 @@ function createTodo() {
 }
 
 
-
 rmvBtn.addEventListener('click', () => {
     const checkboxes = document.querySelectorAll('.checkbox:checked');    
     checkboxes.forEach.call(checkboxes, function(checkbox) {
@@ -68,14 +67,27 @@ rmvBtn.addEventListener('click', () => {
    });
 });
 
+let newCount = document.querySelectorAll('input[type="checkbox"]:checked').length;  
 todos.addEventListener('click', (e) => {
     let item = e.target;
     if(item.classList[0] === 'del'){
         let todo = item.parentElement;
         total.textContent = +total.textContent - 1;
-        // +completed.textContent - 1;
-        todo.remove();    
+        
+        // completed.textContent = +completed.textContent - 1;
+        
+        todo.remove();
+        completed.textContent = document.querySelectorAll('input[type="checkbox"]:checked').length;
+        // if(newCount == 0){
+        //     completed.value == 0;
+        // }  
+        // newCount--;
+        
      }
+     completed.textContent == 0;
+     console.log(document.querySelectorAll('input[type="checkbox"]:checked').length);
+     
+    //  completed.textContent = 0;
 });
 
 todos.addEventListener('click', (e) => {
