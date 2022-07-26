@@ -26,8 +26,10 @@ function createTodo() {
     newCheck.classList.add('checkbox');
     let newLabel = document.createElement('label');
     let labelText = document.createElement('span');
+    labelText.contentEditable="true";
     labelText.classList.add('todoSpan');
     labelText.innerText = input.value;
+    labelText.setAttribute('maxlength', 10)
     newCheck.addEventListener('change', function() {
         labelText.style.textDecoration = newCheck.checked ? 'line-through' : 'none';
       });  
@@ -43,8 +45,9 @@ function createTodo() {
     newDel.setAttribute('href', '#');
     newDel.innerHTML = `<i class="fas fa-times">`;
     newLabel.appendChild(newCheck);
-    newLabel.appendChild(labelText);
+    // newLabel.appendChild(labelText);
     newDiv.appendChild(newLabel);
+    newDiv.appendChild(labelText);
     newDiv.appendChild(newDel);
     newDiv.appendChild(newPen);
     todos.appendChild(newDiv);

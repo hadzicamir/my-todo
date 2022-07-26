@@ -143,3 +143,17 @@ input[type='checkbox']:checked + label.strikethrough {
 .fas {
   color: lightgray;
 }
+
+[contenteditable="true"].todoSpan {
+  white-space: nowrap;
+  width:200px;
+  overflow: hidden;
+} 
+[contenteditable="true"].todoSpan br {
+  display:none;
+
+}
+[contenteditable="true"].todoSpan * {
+  display:inline;
+  white-space:nowrap;
+}
