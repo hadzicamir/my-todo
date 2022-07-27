@@ -26,10 +26,11 @@ function createTodo() {
     newCheck.classList.add('checkbox');
     let newLabel = document.createElement('label');
     let labelText = document.createElement('span');
-    labelText.contentEditable="true";
     labelText.classList.add('todoSpan');
     labelText.innerText = input.value;
-    labelText.setAttribute('maxlength', 10)
+    labelText.contentEditable="true";
+    labelText.spellcheck="false";
+    // labelText.setAttribute('maxlength', 10);
     newCheck.addEventListener('change', function() {
         labelText.style.textDecoration = newCheck.checked ? 'line-through' : 'none';
       });  
@@ -49,7 +50,7 @@ function createTodo() {
     newDiv.appendChild(newLabel);
     newDiv.appendChild(labelText);
     newDiv.appendChild(newDel);
-    newDiv.appendChild(newPen);
+    // newDiv.appendChild(newPen);
     todos.appendChild(newDiv);
     total.textContent = +total.textContent + 1;
    newCheck.addEventListener("change", function(event) {

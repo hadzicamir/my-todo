@@ -149,6 +149,7 @@ input[type='checkbox']:checked + label.strikethrough {
   width:200px;
   overflow: hidden;
 } 
+/* prevents starting next line */
 [contenteditable="true"].todoSpan br {
   display:none;
 
