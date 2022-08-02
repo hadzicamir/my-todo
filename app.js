@@ -5,7 +5,7 @@ const checks = document.querySelectorAll("input[type='checkbox']");
 const rmvBtn = document.getElementById('rmv');
 const dels = document.getElementsByClassName('del');
 const pens = document.getElementsByClassName('pen');
-const spans = document.querySelectorAll('.todoSpan');
+const spans = document.querySelectorAll('.spans');
 let total = document.getElementById('total');
 let completed = document.getElementById('completed');
 
@@ -89,15 +89,16 @@ todos.addEventListener('click', (e) => {
         
      }
      completed.textContent == 0;
-     console.log(document.querySelectorAll('input[type="checkbox"]:checked').length);
+    //  console.log(document.querySelectorAll('input[type="checkbox"]:checked').length);
      
     //  completed.textContent = 0;
 });
 
-todos.addEventListener('click', (e) => {
-    let item = e.target;
-    if(item.classList[0] === 'pen'){
-        item.parentElement.classList.toggle('italic');
-    }
-});
+// todos.addEventListener('click', (e) => {
+//     let item = e.target;
+//     if(item.classList[0] === 'pen'){
+//         item.parentElement.classList.toggle('italic');
+//     }
+// });
+
 
